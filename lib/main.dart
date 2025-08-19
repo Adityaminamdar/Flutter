@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/home_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,14 +11,6 @@ class MyApp extends StatelessWidget {
     int days = 30;
     String name = "James";
 
-    return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome to $days days of Flutter, $name!"),
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(home: Material(child: HomePage()));
   }
 }
